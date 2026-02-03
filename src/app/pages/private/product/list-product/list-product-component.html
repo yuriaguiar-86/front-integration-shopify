@@ -1,0 +1,45 @@
+<h1>Produtos Listagem</h1>
+<button [routerLink]="['']">Inicio</button>
+<button [routerLink]="['/operacoes']">Listar operações</button>
+
+<h3>WHITE</h3>
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Titulo</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (whiteProduct of whiteProducts; track whiteProduct.id) {
+      <tr>
+        <td>{{ whiteProduct?.id }}</td>
+        <td>{{ whiteProduct?.title }}</td>
+        <td>{{ whiteProduct?.handle }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+<h3>BLACK</h3>
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Titulo</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (blackProduct of blackProducts; track blackProduct.id) {
+      <tr>
+        <td>{{ blackProduct?.id }}</td>
+        <td>{{ blackProduct?.title }}</td>
+        <td>{{ blackProduct?.handle }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
