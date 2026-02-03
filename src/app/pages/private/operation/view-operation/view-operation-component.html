@@ -1,0 +1,13 @@
+<h1>Operações visualizar</h1>
+<button [routerLink]="['']">Inicio</button>
+<button [routerLink]="['/operacoes']">Listar operações</button>
+
+<p>Nome: {{ operation?.name }}</p>
+
+<p>Loja White: {{ operation?.white_store }}</p>
+<p>Client ID White: {{ operation?.white_client }}</p>
+<p>Secret White: {{ operation?.white_secret }}</p>
+
+<p>Loja black: {{ operation?.black_store }}</p>
+<p>Client ID black: {{ operation?.black_client }}</p>
+<p>Secret black: {{ operation?.black_secret }}</p>

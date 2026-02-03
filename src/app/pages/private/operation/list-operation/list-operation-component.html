@@ -1,0 +1,29 @@
+<h1>Operações Listagem</h1>
+<button [routerLink]="['']">Inicio</button>
+<button [routerLink]="['/adicionar-operacao']">Nova operação</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Loja White</th>
+      <th>Loja Black</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (operation of operations; track operation.id) {
+      <tr>
+        <td>{{ operation?.name }}</td>
+        <td>{{ operation?.white_store }}</td>
+        <td>{{ operation?.black_store }}</td>
+        <td>
+          <button [routerLink]="['/visualizar-operacao', operation?.id]">Visualizar</button>
+          <button [routerLink]="['/editar-operacao', operation?.id]">Editar</button>
+          <button (click)="deleteOperation(operation.id)">Apagar</button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

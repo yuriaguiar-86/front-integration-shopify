@@ -1,0 +1,38 @@
+<h2>{{ isEdit ? "ATUALIZAR operação" : "NOVA operação"}}</h2>
+
+<button [routerLink]="['']">Inicio</button>
+<button [routerLink]="['/operacoes']">Listar operações</button>
+
+<form [formGroup]="operationForm" (ngSubmit)="onSubmit()">
+
+<label for="name">Nome da operação:</label>
+<input type="text" id="name" formControlName="name" required />
+
+<!-- WHITE -->
+<h3>WHITE</h3>
+<label for="white_store">Domínio da Loja WHITE:</label>
+<input type="text" id="white_store" formControlName="white_store" required />
+
+<label for="white_client">Client ID:</label>
+<input type="text" id="white_client" formControlName="white_client" required />
+
+<label for="white_secret">Secret:</label>
+<input type="text" id="white_secret" formControlName="white_secret" required />
+
+<p><button type="button" (click)="connectStore('white')">Conectar WHITE</button></p>
+
+<!-- BLACK -->
+<h3>BLACK</h3>
+<label for="black_store">Domínio da Loja BLACK:</label>
+<input type="text" id="black_store" formControlName="black_store" required />
+
+<label for="black_client">Client ID:</label>
+<input type="text" id="black_client" formControlName="black_client" required />
+
+<label for="black_secret">Secret:</label>
+<input type="text" id="black_secret" formControlName="black_secret" required />
+
+<p><button type="button" (click)="connectStore('black')">Conectar BLACK</button></p>
+
+<p><button type="submit">Salvar informações</button></p>
+</form>

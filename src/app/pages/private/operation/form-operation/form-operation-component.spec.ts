@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormOperation } from './form-operation';
+import { FormOperationComponent } from './form-operation-component';
 
-describe('FormOperation', () => {
-  let component: FormOperation;
-  let fixture: ComponentFixture<FormOperation>;
+describe('FormOperationComponent', () => {
+  let component: FormOperationComponent;
+  let fixture: ComponentFixture<FormOperationComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [FormOperation]
+      declarations: [FormOperationComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FormOperation);
+    fixture = TestBed.createComponent(FormOperationComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
