@@ -85,6 +85,7 @@ body {
 }
 
 .sidebar nav h3 {
+  font-size: .9rem;
   text-transform: uppercase;
 }
 
