@@ -1,1 +1,121 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --grey: #737980;
+  --dark: #30363E;
+  --black: #1D2125;
+  --green: #004C00;
+  --white: #FFFFFF;
+  --red: #AF3737;
+  --background: #25292E;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  background-color: var(--background);
+}
+
+/* Toolbar */
+.toolbar {
+  margin-left: 330px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+  background-color: var(--background);
+  z-index: 1000;
+}
+
+.menu-btn,
+.menu-user {
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.menu-btn {
+  font-size: 1.7rem;
+}
+
+.menu-user {
+  font-size: 1rem;
+}
+
+.menu-user i {
+  margin-left: 5px;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  overflow-y: auto;
+  width: 320px;
+  height: 100vh;
+  background: var(--black);
+  padding-top: 56px;
+  transition: left 0.3s ease;
+  z-index: 1001;
+  padding: 25px 30px;
+}
+
+.title {
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.sidebar nav {
+  font-size: .9rem;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+.sidebar nav h3 {
+  text-transform: uppercase;
+}
+
+.sidebar nav a {
+  padding: 12px;
+  color: var(--grey);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.sidebar nav a:hover {
+  color: var(--white);
+  background-color: var(--background);
+}
+
+.sidebar nav i,
+.btn-report-bug i {
+  margin-right: 5px;
+}
+
+.btn-report-bug {
+  cursor: pointer;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--red);
+  color: var(--white);
+  width: 100%;
+}
+
+/* CONTENT */
+.content {
+  margin-left: 350px;
+}
