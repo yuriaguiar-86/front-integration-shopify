@@ -6,24 +6,21 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 import { App } from './app';
 import { AppRoutingModule } from './app-routing-module';
 import { HomeComponent } from './pages/private/home/home-component';
-import { FormOperationComponent } from './pages/private/operation/form-operation/form-operation-component';
-import { ListOperationComponent } from './pages/private/operation/list-operation/list-operation-component';
-import { ViewOperationComponent } from './pages/private/operation/view-operation/view-operation-component';
-import { ListProductComponent } from './pages/private/product/list-product/list-product-component';
+import { OperationModule } from './pages/private/operation/operation-module';
+import { ComponentsModule } from './shared/components/components-module';
 
 @NgModule({
   declarations: [
     App,
     HomeComponent,
-    ViewOperationComponent,
-    ListOperationComponent,
-    FormOperationComponent,
-    ListProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
+    ComponentsModule,
+    OperationModule
   ],
   providers: [
     provideHttpClient(withFetch()),
