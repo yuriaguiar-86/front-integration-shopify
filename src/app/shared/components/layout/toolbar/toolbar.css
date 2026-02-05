@@ -1,0 +1,35 @@
+.toolbar {
+  margin-left: 320px;
+  padding: 25px 30px 25px 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+  background-color: var(--dark);
+  z-index: 1000;
+}
+
+.menu-btn,
+.menu-user {
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.menu-btn {
+  font-size: 1.7rem;
+}
+
+.menu-user {
+  font-size: 1rem;
+}
+
+.menu-user i {
+  margin-left: 5px;
+}
+
+.title {
+  font-size: 1.5rem;
+}
