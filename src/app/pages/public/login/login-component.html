@@ -1,4 +1,18 @@
-<p>login-component works!</p>
-<button [routerLink]="['connectop']">Acessar sistema</button>
-<a [routerLink]="['esqueci-senha']">Esqueceu a senha?</a>
+<form class="form-public">
+  <h1>Login</h1>
+
+  <div class="container-input">
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" />
+  </div>
+
+  <div class="container-input">
+    <label for="password">Senha</label>
+    <input type="password" name="password" id="password" />
+  </div>
+
+  <a [routerLink]="['esqueci-senha']">Esqueceu a senha?</a>
+  <button [routerLink]="['connectop']" class="btn-primary">Acessar sistema</button>
+</form>
+
 
