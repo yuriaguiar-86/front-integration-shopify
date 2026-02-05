@@ -1,0 +1,14 @@
+.layout-public {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 90dvh;
+  color: var(--white);
+}
+
+.content-public {
+  width: 530px;
+  background-color: var(--black);
+  border-radius: 5px;
+}
