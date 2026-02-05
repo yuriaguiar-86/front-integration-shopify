@@ -1,0 +1,37 @@
+<aside class="sidebar" id="sidebar">
+  <h1 class="title">Connect <span>OP</span></h1>
+
+  <nav>
+    <h3>Menu principal</h3>
+
+    <a href="#"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+    <a href="#"><i class="fa-solid fa-table-columns"></i> Operações</a>
+  </nav>
+
+  <nav>
+    <h3>Outros</h3>
+
+    <a href="#"><i class="fa-solid fa-id-badge"></i> Meu Perfil</a>
+    <a href="#"><i class="fa-solid fa-circle-info"></i> Ajuda</a>
+    <a [routerLink]="['']"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</a>
+  </nav>
+
+  <button class="btn-report-bug"><i class="fa-solid fa-bug"></i> Reportar Bug</button>
+</aside>
+
+<header class="toolbar">
+  <button class="menu-btn" aria-label="Abrir menu">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <section>
+    <button [routerLink]="['']" class="menu-user" aria-label="Abrir configurações usuário">
+      Yuri Aguiar
+      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    </button>
+  </section>
+</header>
+
+<main class="content">
+  <router-outlet />
+</main>
