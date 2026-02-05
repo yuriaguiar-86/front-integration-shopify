@@ -1,21 +1,7 @@
-<div class="public-layout">
-  <header class="public-header">
-    <div class="container">
-      <h1>Meu Sistema</h1>
-      <p>Área Pública - Faça login para acessar</p>
-    </div>
-  </header>
+<main class="layout-public">
+  <section class="content-public">
+    <router-outlet />
+  </section>
+</main>
 
-  <main class="public-content">
-    <div class="container">
-      <!-- Conteúdo público será renderizado aqui -->
-      <router-outlet></router-outlet>
-    </div>
-  </main>
-
-  <footer class="public-footer">
-    <div class="container">
-      <p>&copy; 2024 Meu Sistema - Todos os direitos reservados</p>
-    </div>
-  </footer>
-</div>
+<app-footer-page />
