@@ -2,7 +2,9 @@
   --grey: #737980;
   --dark: #30363E;
   --black: #1D2125;
-  --green: #004C00;
+  --green: #89FFEB;
+  --blue: #13B397;
+  --olive: #0C604F;
   --white: #FFFFFF;
   --red: #AF3737;
   --background: #25292E;
@@ -22,14 +24,14 @@ body {
 
 /* Toolbar */
 .toolbar {
-  margin-left: 330px;
-  padding: 25px 20px;
+  margin-left: 320px;
+  padding: 25px 30px 25px 25px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   color: var(--white);
-  background-color: var(--background);
+  background-color: var(--dark);
   z-index: 1000;
 }
 
@@ -75,6 +77,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.title span {
+  color: var(--olive);
+}
+
 .sidebar nav {
   font-size: .9rem;
   display: flex;
@@ -118,5 +124,5 @@ body {
 
 /* CONTENT */
 .content {
-  margin-left: 350px;
+  margin: 30px 30px 0px 350px;
 }
