@@ -5,20 +5,19 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { App } from './app';
 import { AppRoutingModule } from './app-routing-module';
-import { HomeComponent } from './pages/private/home/home-component';
-import { OperationModule } from './pages/private/operation/operation-module';
+import { PrivateModule } from './pages/private/private-module';
+import { PublicModule } from './pages/public/public-module';
 
 @NgModule({
   declarations: [
     App,
-    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-
-    OperationModule
+    PublicModule,
+    PrivateModule
   ],
   providers: [
     provideHttpClient(withFetch()),
