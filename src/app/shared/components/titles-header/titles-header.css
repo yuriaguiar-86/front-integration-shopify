@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--blue);
+  margin-bottom: 1.5rem;
+}
+
+header small {
+  font-size: .9rem;
+  color: var(--olive);
+}
+
+button {
+  padding: 10px 15px;
+  background-color: var(--none);
+  color: var(--blue);
+  border-radius: 5px;
+  border: 1px solid var(--blue);
+  cursor: pointer;
+  transition: .3s all;
+}
+
+button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
