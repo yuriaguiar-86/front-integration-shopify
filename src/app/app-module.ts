@@ -7,7 +7,6 @@ import { App } from './app';
 import { AppRoutingModule } from './app-routing-module';
 import { HomeComponent } from './pages/private/home/home-component';
 import { OperationModule } from './pages/private/operation/operation-module';
-import { ComponentsModule } from './shared/components/components-module';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { ComponentsModule } from './shared/components/components-module';
     AppRoutingModule,
     ReactiveFormsModule,
 
-    ComponentsModule,
     OperationModule
   ],
   providers: [
