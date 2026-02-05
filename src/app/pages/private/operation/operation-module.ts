@@ -7,6 +7,7 @@ import { FormOperationComponent } from './form-operation/form-operation-componen
 import { ListOperationComponent } from './list-operation/list-operation-component';
 import { OperationRoutingModule } from './operation-routing-module';
 import { ViewOperationComponent } from './view-operation/view-operation-component';
+import { ComponentsModule } from "../../../shared/components/components-module";
 
 @NgModule({
   declarations: [
@@ -18,8 +19,9 @@ import { ViewOperationComponent } from './view-operation/view-operation-componen
   imports: [
     CommonModule,
     OperationRoutingModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    ComponentsModule
+],
   exports: [
     ViewOperationComponent,
     ListOperationComponent,
