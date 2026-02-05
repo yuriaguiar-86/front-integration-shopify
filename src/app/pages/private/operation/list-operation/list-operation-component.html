@@ -1,7 +1,10 @@
-<h1>Operações Listagem</h1>
-<button [routerLink]="['']">Inicio</button>
-<button [routerLink]="['/adicionar-operacao']">Nova operação</button>
+<app-titles-header
+  [title]="titleHeader.title"
+  [subtitle]="titleHeader.subtitle"
+  [textBtn]="titleHeader.textBtn"
+/>
 
+<!-- criar o trello e o item será indexado no card cujo status for informado (o default será o aquecimento) -->
 <table>
   <thead>
     <tr>

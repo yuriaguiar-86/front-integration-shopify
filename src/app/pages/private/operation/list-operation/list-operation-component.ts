@@ -9,6 +9,12 @@ import { OperationService } from '../../../../shared/services/operation/operatio
   styleUrl: './list-operation-component.css',
 })
 export class ListOperationComponent {
+  titleHeader = {
+    title: 'Operações',
+    subtitle: 'listagem',
+    textBtn: 'Nova Operação',
+  };
+
   operations : Operation[] = [];
 
   constructor(private operationService: OperationService) {
