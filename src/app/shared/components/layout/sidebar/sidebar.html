@@ -4,15 +4,15 @@
   <nav>
     <h3>Menu principal</h3>
 
-    <a href="#"><i class="fa-solid fa-gauge"></i> Dashboard</a>
-    <a href="#"><i class="fa-solid fa-table-columns"></i> Operações</a>
+    <a [routerLink]="['/connectop']"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+    <a [routerLink]="['operacoes']"><i class="fa-solid fa-table-columns"></i> Operações</a>
   </nav>
 
   <nav>
     <h3>Outros</h3>
 
-    <a href="#"><i class="fa-solid fa-id-badge"></i> Meu Perfil</a>
-    <a href="#"><i class="fa-solid fa-circle-info"></i> Ajuda</a>
+    <a [routerLink]="['meu-perfil']"><i class="fa-solid fa-id-badge"></i> Meu Perfil</a>
+    <a [routerLink]="['ajuda']"><i class="fa-solid fa-circle-info"></i> Ajuda</a>
     <a [routerLink]="['']"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</a>
   </nav>
 
