@@ -72,4 +72,5 @@ input,
 .btn-primary {
   background-color: var(--blue);
   color: var(--white);
+  cursor: pointer;
 }
